@@ -1,0 +1,218 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 7%;
+  /* background: #6e54fa; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 1;
+  color: #ffff;
+}
+
+.navbar .logo span {
+  color: #190062;
+}
+
+.navbar .navbar-button {
+  border: 0px solid;
+  border-radius: 8px;
+  padding: 0.6rem;
+}
+.navbar .navbar-button .login {
+  position: relative;
+}
+.navbar .navbar-button .login span {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  font-size: 0.6rem;
+  font-weight: 500;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  padding: 10px 15px;
+  border-radius: 8px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.navbar .navbar-button .login span::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+}
+
+.navbar .navbar-button .login:hover span {
+  top: -70%;
+  color: white;
+  visibility: visible;
+  opacity: 1;
+}
+
+.navbar .navbar-button .login:hover {
+  color: #ff5b22;
+}
+
+.navbar .navbar-button a {
+  color: #ffff;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  font-weight: 500;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-button .login i {
+  font-size: 24px;
+}
+
+.banner {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(asset/waterboom.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffff;
+  padding-bottom: 20px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 420px 420px;
+}
+
+.card-img {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background: url(asset/pht3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner h2 {
+  padding-bottom: 40px;
+  margin-bottom: 10px;
+}
+
+.card-content {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background: #ffff;
+  height: 330px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-content h3 {
+  text-align: center;
+  color: black;
+  padding: 25px 0 10px 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.form-row {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+
+form select,
+form input {
+  display: block;
+  width: 100%;
+  margin: 15px 12px;
+  padding: 5px;
+  font-size: 12px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #c2c2c2;
+  font-weight: 300;
+}
+
+form input[type="text"],
+form input [type="email"],
+form input [type="file"] form input::placeholder,
+select {
+  color: #9a9a9a;
+}
+
+.form-row input[type="submit"] {
+  background-color: #3897f0;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  font-size: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.form-row input[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+.contact {
+  padding: 4rem 7% 1.4rem;
+  min-height: 100vh;
+  color: white;
+  background: #845bff;
+}
+
+.contact h2 {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.contact p {
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.contact .row {
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.contact .row .map {
+  flex: 1 1 45rem;
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+}
